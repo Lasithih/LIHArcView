@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18658A5847FA3550CC4E1C46D8D559FC /* LIHArcView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BFF5E5A4B0AEBF10AB1C335C0FA7B0 /* LIHArcView-dummy.m */; };
 		1DF9DAF2A599A8B036948AA28F4ECBC2 /* Pods-LIHArcView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA0E5D9B25B3ACE194355DBCD47B880B /* Pods-LIHArcView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		31976525F3D6F0CAB7BD7096C9F03221 /* LIHArcView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BFF5E5A4B0AEBF10AB1C335C0FA7B0 /* LIHArcView-dummy.m */; };
+		3995974452E9C6DD783A203AC56369EB /* LIHArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF8F4FE421D540D83CF303BE079BF6B /* LIHArcView.swift */; };
 		3DFD902F93C4658E04F3A0C51492AED7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		52E37920570A28E5B296291931F041AD /* Pods-LIHArcView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25437CF96BCB8097491B49968BB65DE4 /* Pods-LIHArcView_Example-dummy.m */; };
 		702F406E398CDE7A62188B26F80B8940 /* LIHArcView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A171B71711A47C3A12684139C46860BB /* LIHArcView.bundle */; };
@@ -16,7 +17,6 @@
 		9D78F9D59C7851315414444F2113663F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		A735E4E6B137C3596175E87912098F32 /* Pods-LIHArcView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9374F34EC7C2923515A1C8A8F32E9959 /* Pods-LIHArcView_Tests-dummy.m */; };
 		A9F027F1305BAE6F9B3934DB86EE812F /* Pods-LIHArcView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0512BEFF6D439D47A87B384FC67EE3A /* Pods-LIHArcView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6CE3933A889ABA461D0C8DDA2E91960 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FBF63CFD8C59090735ADC89544F22D /* ReplaceMe.swift */; };
 		F4DA914B624A90799A9062F7329FB341 /* LIHArcView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 477513F499CC2FA2875E7A488B6647EA /* LIHArcView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -47,6 +47,7 @@
 /* Begin PBXFileReference section */
 		089DCBF44B842A43CF871E4048E23317 /* Pods-LIHArcView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LIHArcView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1B6DDD768D1893DB371E7DA756CBDF88 /* Pods_LIHArcView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LIHArcView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BF8F4FE421D540D83CF303BE079BF6B /* LIHArcView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LIHArcView.swift; sourceTree = "<group>"; };
 		23C1D0B8DAD0190CAB562230E5E04C8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25437CF96BCB8097491B49968BB65DE4 /* Pods-LIHArcView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LIHArcView_Example-dummy.m"; sourceTree = "<group>"; };
 		32C20E76C47A770A5A8BF4D2521ECC44 /* Pods-LIHArcView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LIHArcView_Example-resources.sh"; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		8AFEE228DA99A73B75A9AF1FCED3A60B /* Pods-LIHArcView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LIHArcView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		92FC3DD7043C43730470C0D4776552F4 /* Pods-LIHArcView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LIHArcView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9374F34EC7C2923515A1C8A8F32E9959 /* Pods-LIHArcView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LIHArcView_Tests-dummy.m"; sourceTree = "<group>"; };
-		97FBF63CFD8C59090735ADC89544F22D /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		A171B71711A47C3A12684139C46860BB /* LIHArcView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LIHArcView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86DD144A04DCD1C65532E68E863FC48 /* Pods-LIHArcView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LIHArcView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		AA58EEFE97E013658C19D5F97F2BD4A8 /* Pods-LIHArcView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LIHArcView_Tests.modulemap"; sourceTree = "<group>"; };
@@ -151,14 +151,6 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		7213E2CA87FB85600E32E27A9AF5A67F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				97FBF63CFD8C59090735ADC89544F22D /* ReplaceMe.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +171,14 @@
 				1B6DDD768D1893DB371E7DA756CBDF88 /* Pods_LIHArcView_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8AD63EB39DC57439483B423F4CF6F8A7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1BF8F4FE421D540D83CF303BE079BF6B /* LIHArcView.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		9F89ED3E8E84D9C08D0F17BEFBC27602 /* Targets Support Files */ = {
@@ -223,7 +223,7 @@
 		C7913C028B7D2A6AAB8A4B481CA3350D /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				7213E2CA87FB85600E32E27A9AF5A67F /* Classes */,
+				8AD63EB39DC57439483B423F4CF6F8A7 /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 969C308456EDD4598AB2E58EEB71BBD6 /* Build configuration list for PBXNativeTarget "LIHArcView" */;
 			buildPhases = (
-				09A7695A39DF9929B7E94B0CCE939099 /* Sources */,
+				A648664569E8BA1A624F5B7AF90C5640 /* Sources */,
 				61C2B718C14DD9891BD244298435EB12 /* Frameworks */,
 				BD163D6244DF4FADA36A3A4985D5FF0E /* Resources */,
 				337D13D22ECE7EF099307EE9C6B51906 /* Headers */,
@@ -396,15 +396,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		09A7695A39DF9929B7E94B0CCE939099 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				31976525F3D6F0CAB7BD7096C9F03221 /* LIHArcView-dummy.m in Sources */,
-				B6CE3933A889ABA461D0C8DDA2E91960 /* ReplaceMe.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0F142CFAA5387A42384291B9D5DF9906 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -417,6 +408,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				52E37920570A28E5B296291931F041AD /* Pods-LIHArcView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A648664569E8BA1A624F5B7AF90C5640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18658A5847FA3550CC4E1C46D8D559FC /* LIHArcView-dummy.m in Sources */,
+				3995974452E9C6DD783A203AC56369EB /* LIHArcView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

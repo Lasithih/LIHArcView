@@ -1,15 +1,15 @@
 {
   "name": "LIHArcView",
   "version": "0.1.0",
-  "summary": "A short description of LIHArcView.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/LIHArcView",
+  "summary": "Highly customizable arc view",
+  "description": "LIHArcView is can be used to draw and animate arcs.",
+  "homepage": "https://github.com/Lasithih/LIHArcView",
   "license": "MIT",
   "authors": {
-    "Lasith Hettiarachchi": "lasith.h@fidenz.com"
+    "Lasith Hettiarachchi": "lasithih@yahoo.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/LIHArcView.git",
+    "git": "https://github.com/Lasithih/LIHArcView.git",
     "tag": "0.1.0"
   },
   "platforms": {

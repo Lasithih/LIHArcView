@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LIHArcView: 9ddacab992c4a98f34c3412a85bec6b182b9337c
+  LIHArcView: e673b8dee1c9ac6bfbf1d0cc6da73e3ff4d587cb
 
 COCOAPODS: 0.39.0

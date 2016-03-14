@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '825E8B50D6CF87C3B8FEDACE'
+               BlueprintIdentifier = '8E91C8AFA39D8394FE9956F9'
                BlueprintName = 'Pods-LIHArcView_Example'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_LIHArcView_Example.framework'>

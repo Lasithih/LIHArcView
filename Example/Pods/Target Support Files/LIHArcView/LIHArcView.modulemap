@@ -1,0 +1,6 @@
+framework module LIHArcView {
+  umbrella header "LIHArcView-umbrella.h"
+
+  export *
+  module * { export * }
+}

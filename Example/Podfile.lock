@@ -1,0 +1,14 @@
+PODS:
+  - LIHArcView (0.1.0)
+
+DEPENDENCIES:
+  - LIHArcView (from `../`)
+
+EXTERNAL SOURCES:
+  LIHArcView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LIHArcView: 9ddacab992c4a98f34c3412a85bec6b182b9337c
+
+COCOAPODS: 0.39.0

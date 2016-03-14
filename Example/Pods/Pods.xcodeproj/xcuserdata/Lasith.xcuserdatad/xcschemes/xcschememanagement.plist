@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>LIHArcView-LIHArcView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>LIHArcView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-LIHArcView_Example.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-LIHArcView_Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3FDF6E7949378E3CA1A46047B159C3C1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4F0F554FA6119ADBC1FD42B246F0F65B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5828B8EC7B50405799D56638F23F8F10</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FAE2A4E74099141CCD8551DB59C5C5DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var viewTwo: LIHArcView!
     @IBOutlet weak var viewThree: LIHArcView!
     @IBOutlet weak var viewFour: LIHArcView!
-//    @IBOutlet weak var viewFive: LIHArcView!
-//    @IBOutlet weak var viewSix: LIHArcView!
+    @IBOutlet weak var viewFive: LIHArcView!
+    @IBOutlet weak var viewSix: LIHArcView!
 
     var viewTwoTimer: NSTimer?
     
@@ -42,11 +42,21 @@ class ViewController: UIViewController {
         //Dashed Arc 2
         self.viewFour.isDashedLine = true
         self.viewFour.dashedLinePattern = [10,2] //format - [filled points, not filled points]
+        
+        //Half Arc
+        self.viewFive.startAngle = π
+        self.viewFive.endAngle = 2 * π
+        self.viewFive.topPadding = 20
+        
+        //Quater Arc
+        self.viewSix.startAngle = π / 2
+        self.viewSix.endAngle = π
+        self.viewSix.bottomPadding = 20
     }
 
     override func viewDidAppear(animated: Bool) {
         
-        self.viewOne.animatePosition(1.0)
+        self.viewOne.animate(1.0, reverse: false, completion: nil)
     }
     
     //MARK: - Timers
@@ -59,9 +69,13 @@ class ViewController: UIViewController {
     }
     
     //MARK: - Events
-    @IBAction func animate(sender: UIButton) {
+    @IBAction func show(sender: UIButton) {
+        self.viewOne.animate(1.0, reverse: false, completion: nil)
+    }
+    
+    @IBAction func hide(sender: UIButton) {
         
-        self.viewOne.animatePosition(1.0)
+        self.viewOne.animate(1.0, reverse: true, completion: nil)
     }
 }
 

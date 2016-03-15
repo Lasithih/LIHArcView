@@ -30,31 +30,68 @@ let π: CGFloat = CGFloat(M_PI)
         }
     }
     
+    @IBInspectable public var archColor: UIColor = UIColor.blueColor() {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+    
+    @IBInspectable public var width: CGFloat = 20 {
+        didSet {
+            if self.isDottedSpacingDefault {
+                self.dottedSpacing = self.width * 2
+            }
+            
+            if self.isDashPatternDefault {
+                self.dashedLinePattern = [self.width,self.width]
+            }
+            setNeedsDisplay()
+        }
+    }
+    
+    
     //Dash
     @IBInspectable public var isDashedLine: Bool = false {
         didSet {
             setNeedsDisplay()
         }
     }
-    public var dashedLinePattern: [CGFloat] = [6,6] {
+    public var dashedLinePattern: [CGFloat] = [20,20] {
+        didSet {
+            self.isDashPatternDefault = false
+            setNeedsDisplay()
+        }
+    }
+    private var isDashPatternDefault: Bool = true
+    
+    //Dotted
+    @IBInspectable public var isDottedLine: Bool = false {
         didSet {
             setNeedsDisplay()
         }
     }
+    public var dottedSpacing: CGFloat = 40 {
+        didSet {
+            self.isDottedSpacingDefault = false
+            setNeedsDisplay()
+        }
+    }
+    private var isDottedSpacingDefault: Bool = true
+    
+    
+    @IBInspectable public var roundCorners: Bool = false
+    
+    //Padding
+    @IBInspectable public var topPadding: CGFloat = 0.0
+    @IBInspectable public var bottomPadding: CGFloat = 0.0
+    @IBInspectable public var leftPadding: CGFloat = 0.0
+    @IBInspectable public var rightPadding: CGFloat = 0.0
     
     private var shapeLayer: CAShapeLayer?
+    private var path: UIBezierPath?
     
-    @IBInspectable public var archColor: UIColor = UIColor.blueColor() {
-        didSet {
-            setNeedsDisplay()
-        }
-    }
+    private var isHidden: Bool = false
 
-    @IBInspectable public var width: CGFloat = 20 {
-        didSet {
-            setNeedsDisplay()
-        }
-    }
     
     override public func drawRect(rect: CGRect) {
         
@@ -63,7 +100,7 @@ let π: CGFloat = CGFloat(M_PI)
     
     private func ReloadCounterView(){
         
-        let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
+        let center = CGPoint(x:(bounds.width/2)-self.leftPadding+self.rightPadding, y: (bounds.height/2)+self.topPadding-self.bottomPadding)
         
         let radius: CGFloat = min(bounds.width,  bounds.height)
         
@@ -77,7 +114,7 @@ let π: CGFloat = CGFloat(M_PI)
             startAngle: startAngle,
             endAngle: endAngle,
             clockwise: true)
-        
+        self.path = path
         
         if self.isAnimatable {
             shapeLayer = CAShapeLayer()
@@ -87,7 +124,15 @@ let π: CGFloat = CGFloat(M_PI)
             shapeLayer?.lineWidth = self.width
             
             if self.isDashedLine {
-                shapeLayer?.lineDashPattern = [5,5]
+                shapeLayer?.lineDashPattern = self.dashedLinePattern
+            } else if self.isDottedLine {
+                
+                self.shapeLayer?.lineDashPattern = [0, self.dottedSpacing]
+                self.shapeLayer?.lineCap = kCALineCapRound
+            }
+            
+            if self.roundCorners {
+                self.shapeLayer?.lineCap = kCALineCapRound
             }
             
             self.layer.addSublayer(self.shapeLayer!)
@@ -98,29 +143,56 @@ let π: CGFloat = CGFloat(M_PI)
             archColor.setStroke()
             
             if self.isDashedLine {
-                var count: Int = 0
-                for _ in self.dashedLinePattern {
-                    count = count + 1
-                }
                 
-                path.setLineDash(self.dashedLinePattern, count: count, phase: 0.0)
+                path.setLineDash(self.dashedLinePattern, count: self.dashedLinePattern.count, phase: 0.0)
+                
+            } else if self.isDottedLine {
+                path.setLineDash([0, self.dottedSpacing], count: self.dashedLinePattern.count, phase: 0.0)
+                path.lineCapStyle = CGLineCap.Round
             }
+            
+            if self.roundCorners {
+                path.lineCapStyle = CGLineCap.Round
+            }
+            
             path.stroke()
         }
-        
     }
     
-    public func animatePosition(timeInterval: NSTimeInterval) {
+    public func animate(timeInterval: NSTimeInterval, reverse: Bool, completion: (()->Void)?) {
+        
+        self.shapeLayer?.hidden = false
+        
+        CATransaction.begin()
+        CATransaction.setCompletionBlock { () -> Void in
+            
+            completion?()
+        }
         
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         
         animation.duration = timeInterval
         
-        animation.fromValue = 0
-        animation.toValue = 1
+        if reverse {
+            animation.fromValue = 1
+            animation.toValue = 0
+        } else {
+            animation.fromValue = 0
+            animation.toValue = 1
+        }
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         
         self.shapeLayer?.addAnimation(animation, forKey: "strokeEnd")
+        CATransaction.commit()
+    }
+    
+    func rotated() {
+        self.ReloadCounterView()
+    }
+    
+    public func rotate() {
         
+        let transform: CGAffineTransform = CGAffineTransformMakeRotation(2*π)
+        self.path?.applyTransform(transform)
     }
 }

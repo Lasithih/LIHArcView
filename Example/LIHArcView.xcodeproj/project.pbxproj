@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		78E9C4441C97D3AB00DF6A87 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E9C4431C97D3AB00DF6A87 /* SecondViewController.swift */; };
 		DDBEFC86410EF57F69401F8A /* Pods_LIHArcView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36E29C4F735AFDE0B4DA663 /* Pods_LIHArcView_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		607FACE51AFB9204008FA782 /* LIHArcView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LIHArcView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		78E9C4431C97D3AB00DF6A87 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		7E88B59FFDA29AAD787A2FC3 /* Pods-LIHArcView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LIHArcView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LIHArcView_Example/Pods-LIHArcView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AB393F00336310EEF22C0FAF /* LIHArcView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LIHArcView.podspec; path = ../LIHArcView.podspec; sourceTree = "<group>"; };
 		D36E29C4F735AFDE0B4DA663 /* Pods_LIHArcView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LIHArcView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +101,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				78E9C4431C97D3AB00DF6A87 /* SecondViewController.swift */,
 			);
 			name = "Example for LIHArcView";
 			path = LIHArcView;
@@ -359,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E9C4441C97D3AB00DF6A87 /* SecondViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

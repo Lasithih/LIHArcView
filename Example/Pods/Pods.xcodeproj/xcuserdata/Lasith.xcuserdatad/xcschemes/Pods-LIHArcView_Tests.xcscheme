@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1C3BB743A5621B781BAFBCBD'
+               BlueprintIdentifier = '19F1A021EC92605EF87FAB9B'
                BlueprintName = 'Pods-LIHArcView_Tests'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_LIHArcView_Tests.framework'>

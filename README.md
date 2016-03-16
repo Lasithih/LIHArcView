@@ -7,6 +7,9 @@
 
 ## Usage
 
+<img src="https://4.bp.blogspot.com/-yAxuby5AZbI/Vukkihg3dUI/AAAAAAAACvU/j8x2Wk-gfUknzjB4a9Z2DcDSVst_XPPmQ/s400/LIHArcView1_1.gif">
+<img src="https://3.bp.blogspot.com/-I9GIeVsR6Os/VuklifaEzzI/AAAAAAAACvc/Wu3gDj3zRb4hYGvBOKWA0mJ7KuiUSisMQ/s400/LIHArcView2_2.gif">
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ###Using Storyboard
@@ -43,7 +46,7 @@ pod "LIHArcView"
 
 ## Author
 
-Lasith Hettiarachchi, lasith.h@fidenz.com
+Lasith Hettiarachchi, lasithih@yahoo.com
 
 ## License
 

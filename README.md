@@ -9,7 +9,28 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+###Using Storyboard
+Drag UIView to your view controller and set "LIHArcView" as the class of the UIVIew.
+<p><img src="https://1.bp.blogspot.com/-6GOOkL5gih4/Vuj2S5eToYI/AAAAAAAACvE/igdOqyFOiTAxjBWQBt1irRUZwbyUDlE_w/s1600/LIHArcView1.png"></p>
+
+<p><img src="https://4.bp.blogspot.com/-XdFVOFm3y6k/Vuj2S_9p46I/AAAAAAAACvA/E113AEvIIgMyeZ27mBQXa8NxhyXPf7ysg/s1600/LIHArcView2.png"></p>
+
+###Using Code
+Import the module using
+```Swift
+    import LIHAlert
+```
+
+```Swift
+let arcView = LIHArcView()
+arcView.width = 10
+arcView.arcColor = UIColor.blueColor
+```
+
+See the example project for more customizations.
+
 ## Requirements
+iOS 7+
 
 ## Installation
 

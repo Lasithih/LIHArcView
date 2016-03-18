@@ -32,6 +32,28 @@ arcView.arcColor = UIColor.blueColor
 
 See the example project for more customizations.
 
+You can change following properties
+```Swift
+    public var startAngle:CGFloat //Default is 0
+    public var endAngle:CGFloat //Default is 2*π
+    public var isAnimatable: Bool //Default is false
+    public var arcColor: UIColor //Default is UIColor.blueColor
+    
+    public var width: CGFloat //Default is 20.0
+    
+    public var isDashedLine: Bool //Default is false
+    public var dashedLinePattern: [CGFloat] //Default is [width,width]
+    
+    public var isDottedLine: Bool //Default is false
+    public var dottedSpacing: CGFloat = 40 //Default is width*2
+    public var roundCorners: Bool //Default is false
+    
+    public var topPadding: CGFloat //Default is 0.0
+    public var bottomPadding: CGFloat //Default is 0.0
+    public var leftPadding: CGFloat //Default is 0.0
+    public var rightPadding: CGFloat //Default is 0.0
+```
+
 ## Requirements
 iOS 7+
 

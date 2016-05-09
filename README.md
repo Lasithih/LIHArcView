@@ -12,7 +12,7 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-###Using Storyboarda
+###Using Storyboard
 Drag UIView to your view controller and set "LIHArcView" as the class of the UIVIew.
 <p><img src="https://1.bp.blogspot.com/-6GOOkL5gih4/Vuj2S5eToYI/AAAAAAAACvE/igdOqyFOiTAxjBWQBt1irRUZwbyUDlE_w/s1600/LIHArcView1.png"></p>
 
